@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-04-14 17:22:11 by Eclipse SUMO sumo Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="cross/cross.net.xml"/>
+        <route-files value="cross/cross.rou.xml"/>
+        <additional-files value="cross/cross.add.xml"/>
+    </input>
+
+    <output>
+        <collision-output value="cross/collision.xml"/>
+        <statistic-output value="cross/statistic.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <ignore-accidents value="false"/>
+        <collision.action value="teleport"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="60276"/>
+    </traci_server>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+    <gui_only>
+        <gui-settings-file value="cross/gui_setting.xml"/>
+        <tracker-interval value="0.5"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <vehicles loaded="1945" inserted="1945" running="0" waiting="0"/>
+    <teleports total="2" jam="0" yield="0" wrongLane="1"/>
+    <safety collisions="1" emergencyStops="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+</statistics>
